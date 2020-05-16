@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
     printf("Última modificación al archivo: \t\t\t%s", formatTime(stat_st.st_atime));
     printf("ID Usuario: %d\n",stat_st.st_uid);
     printf("ID Grupo: %d\n",stat_st.st_gid); 
-    printf("Permisos que posee el archivo:");
+    printf("Permisos que posee el archivo: ");
     printf( (S_ISDIR(stat_st.st_mode)) ? "d" : "-");
     printf( (stat_st.st_mode & S_IRUSR) ? "r" : "-");
     printf( (stat_st.st_mode & S_IWUSR) ? "w" : "-");
