@@ -54,4 +54,6 @@ int main(int argc, char * argv[])
 		printf("%s", cadena);
 	}
 	printf("\n");
+
+	close(fdescriptor);
 }
